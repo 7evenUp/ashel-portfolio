@@ -3,6 +3,8 @@ import styles from './Projects.module.scss'
 
 export default function Projects() {
   return (
-    <div className={styles.container}>Projects</div>
+    <div className={styles.container}>
+      <h1>Projects</h1>
+    </div>
   )
 }

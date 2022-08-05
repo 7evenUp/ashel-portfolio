@@ -1,11 +1,18 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.scss';
+import { Menu } from './components';
+import { Outlet } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <h1 className='App_header'>Ashel portfolio</h1>
+      <h1 className='App_heading'>Ashel portfolio</h1>
+      <div className='App_navigation_wrapper'>
+        <Menu />
+      </div>
+      
+      <Outlet />
     </div>
   )
 }
