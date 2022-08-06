@@ -1,5 +1,7 @@
+@use '../../styles/colors';
+
 .header {
-  background: linear-gradient(90deg, #EFC173 29.8%, #6667AB 29.8% 70.2%);
+  background: linear-gradient(90deg, colors.$secondary 29.8%, colors.$primary 29.8% 70.2%);
   padding: 96px 0px;
 }
 
