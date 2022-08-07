@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Button } from '../../components'
+import SkillItem from '../../components/SkillItem/SkillItem'
+import { uidata } from '../../uidata'
 import styles from './About.module.scss'
 
 export default function About() {
@@ -64,78 +66,21 @@ export default function About() {
           <h3 className={styles.section_heading}>My Skills</h3>
           <div className={styles.section_content}>
             <div className={styles.skills}>
-              <div className={styles.skill}>
-                <figure className={styles.skill_image}>
-                  ...here will be image
-                </figure>
-                <h4 className={styles.skill_heading}>Frontend</h4>
-                <ul className={styles.skill_list}>
-                  <li className={styles.skill_list_item}>
-                    <span>circle</span>
-                    <span>React</span>
-                  </li>
-                  <li className={styles.skill_list_item}>
-                    <span>circle</span>
-                    <span>Redux toolkit</span>
-                  </li>
-                  <li className={styles.skill_list_item}>
-                    <span>circle</span>
-                    <span>Tailwind CSS</span>
-                  </li>
-                  <li className={styles.skill_list_item}>
-                    <span>circle</span>
-                    <span>Next.js</span>
-                  </li>
-                </ul>
-              </div>
-              <div className={styles.skill}>
-                <figure className={styles.skill_image}>
-                  ...here will be image
-                </figure>
-                <h4 className={styles.skill_heading}>Backend</h4>
-                <ul className={styles.skill_list}>
-                  <li className={styles.skill_list_item}>
-                    <span>circle</span>
-                    <span>Node</span>
-                  </li>
-                  <li className={styles.skill_list_item}>
-                    <span>circle</span>
-                    <span>Express</span>
-                  </li>
-                  <li className={styles.skill_list_item}>
-                    <span>circle</span>
-                    <span>Nest</span>
-                  </li>
-                  <li className={styles.skill_list_item}>
-                    <span>circle</span>
-                    <span>MongoDB</span>
-                  </li>
-                  <li className={styles.skill_list_item}>
-                    <span>circle</span>
-                    <span>Firebase</span>
-                  </li>
-                </ul>
-              </div>
-              <div className={styles.skill}>
-                <figure className={styles.skill_image}>
-                  ...here will be image
-                </figure>
-                <h4 className={styles.skill_heading}>Mobile</h4>
-                <ul className={styles.skill_list}>
-                  <li className={styles.skill_list_item}>
-                    <span>circle</span>
-                    <span>React-Native</span>
-                  </li>
-                  <li className={styles.skill_list_item}>
-                    <span>circle</span>
-                    <span>Flutter</span>
-                  </li>
-                  <li className={styles.skill_list_item}>
-                    <span>circle</span>
-                    <span>Kotlin</span>
-                  </li>
-                </ul>
-              </div>
+              {Object.entries(uidata).map(obj => (
+                <div className={styles.skill}>
+                  <figure className={styles.skill_image}>
+                    ...here will be image
+                  </figure>
+                  <h4 className={styles.skill_heading}>{obj[0]}</h4>
+                  <ul className={styles.skill_list}>
+                    {obj[1].map(el => (
+                      <li className={styles.skill_list_item}>
+                        <SkillItem name={el.name} level={el.level} />
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
             </div>
           </div>
         </section>

@@ -1,0 +1,25 @@
+@use '../../styles/colors';
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+
+  &_beginner {
+    background-color: colors.$secondary;
+  }
+
+  &_skilled {
+    background-color: colors.$primary;
+  }
+}
+
+.label {
+  font-size: 20px;
+}
