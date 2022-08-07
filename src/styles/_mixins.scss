@@ -1,0 +1,43 @@
+@use './colors';
+
+@mixin font-inconsolata-bold {
+  font-family: 'Inconsolata', monospace;
+  font-weight: 700;
+}
+
+@mixin font-inconsolata-extra-light {
+  font-family: 'Inconsolata', monospace;
+  font-weight: 200;
+}
+
+@mixin font-inter-regular {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
+
+@mixin font-inter-light {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+}
+
+@mixin hero-highlights-font {
+  @include font-inter-light;
+  font-size: 16px;
+  line-height: 140%;
+  color: colors.$secondary;
+}
+
+@mixin button {
+  @include font-inter-regular;
+  padding: 8px 32px;
+  border: 1px solid colors.$secondary;
+  color: colors.$secondary;
+  font-size: 24px;
+  width: max-content;
+  transition: all 0.15s ease-in-out;
+
+  &:hover {
+    background-color: colors.$secondary;
+    color: colors.$primary;
+  }
+}

@@ -1,8 +1,45 @@
 @use '../../styles/colors';
+@use '../../styles/mixins';
 
 .header {
   background: linear-gradient(90deg, colors.$secondary 29.8%, colors.$primary 29.8% 70.2%);
   padding: 96px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+}
+
+.avatar {
+  margin: 0;
+  z-index: 1;
+  width: 400px;
+  height: 400px;
+  position: relative;
+  border: 0.115rem solid #fff;
+  border-radius: 25px;
+
+  &_shapes {
+    position: absolute;
+    left: -164px;
+    top: -81px;
+    z-index: -1;
+    width: 649px;
+    height: 484px;
+    background-image: url('./media/avatar_shapes.svg');
+  }
+
+  &_image {
+    width: 400px;
+    display: block;
+    height: 400px;
+    margin-top: -24px;
+    background-color: #fff;
+    background-size: cover;
+    background-position-x: center;
+    margin-left: -40px;
+    background-image: url('./media/handsome_boy.png');
+  }
 }
 
 .section {
@@ -12,4 +49,39 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  &_heading {
+    @include mixins.font-inconsolata-bold;
+    font-size: 48px;
+    color: colors.$secondary;
+    width: 216px;
+  }
+
+  &_desc {
+    @include mixins.font-inter-regular;
+    font-size: 24px;
+    color: colors.$white;
+    width: 445px;
+  }
+
+  &_highlights {
+    display: flex;
+    align-items: flex-start;
+    gap: 64px;
+
+    li {
+      @include mixins.hero-highlights-font;
+      width: 160px;
+    }
+  }
+
+  &_btn {
+    @include mixins.button;
+  }
 }

@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Button } from '../../components'
-import SkillItem from '../../components/SkillItem/SkillItem'
+import { SkillItem } from '../../components'
 import { uidata } from '../../uidata'
 import styles from './About.module.scss'
 
@@ -10,8 +9,9 @@ export default function About() {
     <>
       <header className={styles.header}>
         <div className={styles.image_wrapper}>
-          <figure>
-            <img src={"#"} alt="handsome boy" />
+          <figure className={styles.avatar}>
+            <span className={styles.avatar_shapes} />
+            <span className={styles.avatar_image}/>
           </figure>
         </div>
         <div className={styles.hero}>
@@ -21,9 +21,7 @@ export default function About() {
               <li>Over three years of building web tools and UI designs</li>
               <li>Highly skilled at creating products from scratch</li>
             </ul>
-            <Button>
-              <Link to='/projects'>See my works</Link>
-            </Button>
+            <Link to='/projects' className={styles.hero_btn}>See my works</Link>
         </div>
       </header>
       <div className={styles.container}>
@@ -104,7 +102,7 @@ export default function About() {
                 <h4>Contact me</h4>
                 <div>
                   <a href='mailto:sheludeshev.artyom@mail.ru'>@mail.me</a>
-                  <a href='t.me/x7evenUpx'>t.me/x7evenUpx</a>
+                  <a href='https://t.me/x7evenUpx' target={'_blank'} rel="noreferrer">t.me/x7evenUpx</a>
                 </div>
               </div>
             </div>
@@ -112,16 +110,12 @@ export default function About() {
               <div>
                 <h4>I also write, sometimes</h4>
                 <p>About frontend dev, crypto trading, design and life</p>
-                <Button>
-                  <a href='https://ashel.vercel.app'>Read my blog</a>
-                </Button>
+                <a href='https://ashel.vercel.app' target={'_blank'} rel="noreferrer">Read my blog</a>
               </div>
               <div>
                 <h4>Make sure to see my works</h4>
                 <p>Open source, UI kits, UI libraries, websites and more</p>
-                <Button>
-                  <Link to={'/projects'}>See my works</Link>
-                </Button>
+                <Link to={'/projects'}>See my works</Link>
               </div>
             </div>
           </div>
