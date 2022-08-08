@@ -1,3 +1,7 @@
+// import frontend_img from './frontend_illustration.png'
+// import backend_img from './backend_illustration.png'
+// import mobile_img from './mobile_illustration.png'
+
 export type Skill = {
   name: string
   level: 'skilled' | 'beginner'

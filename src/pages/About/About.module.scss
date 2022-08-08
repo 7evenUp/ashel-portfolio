@@ -156,6 +156,39 @@
   }
 }
 
+.skills {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+
+  &_image {
+    height: 220px;
+  }
+
+  &_heading {
+    @include mixins.font-inter-regular;
+    font-size: 32px;
+    text-transform: capitalize;
+  }
+
+  &_list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &_skill_list_item {
+
+  }
+}
+
 .footer {
   background-color: colors.$black;
 }

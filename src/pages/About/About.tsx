@@ -66,9 +66,7 @@ export default function About() {
             <div className={styles.skills}>
               {Object.entries(uidata).map(obj => (
                 <div className={styles.skill}>
-                  <figure className={styles.skill_image}>
-                    ...here will be image
-                  </figure>
+                  <img src={`${obj[0]}_illustration.png`} className={styles.skill_image} />
                   <h4 className={styles.skill_heading}>{obj[0]}</h4>
                   <ul className={styles.skill_list}>
                     {obj[1].map(el => (
