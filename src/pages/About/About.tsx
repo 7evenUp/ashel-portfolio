@@ -29,7 +29,7 @@ export default function About() {
           <h3 className={styles.section_heading}>What Do I Do?</h3>
           <div className={styles.section_content}>
             <div className={styles.fields}>
-              <div className={styles.field_row}>
+              <div className={styles.field}>
                 <div className={styles.field_info}>
                   <h4 className={styles.field_heading}>Design</h4>
                   <p className={styles.field_text}>Probably I'm not the best UI/UX designer you'll ever see, but I Do design. And I make my works with rich user experiences while staying fashionable</p>
@@ -38,7 +38,7 @@ export default function About() {
                   {/* SVGs */}
                 </div>
               </div>
-              <div className={styles.field_row}>
+              <div className={styles.field}>
                 <div className={styles.field_decoration}>
                   {/* SVGs */}
                 </div>
@@ -47,7 +47,7 @@ export default function About() {
                   <p className={styles.field_text}>I build javascript applications with right tools and libraries, and can deliver fast, resilent solutions optimized for scale - performance and scalability are my priorities</p>
                 </div>
               </div>
-              <div className={styles.field_row}>
+              <div className={styles.field}>
                 <div className={styles.field_info}>
                   <h4 className={styles.field_heading}>Mobile dev</h4>
                   <p className={styles.field_text}>Haven't created any commercial mobile app yet, but I've built some for my own purposes such as automation of my life routine</p>
