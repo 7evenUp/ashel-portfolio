@@ -10,6 +10,14 @@
   gap: 120px;
 }
 
+.container {
+  width: 1400px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
 .avatar {
   margin: 0;
   z-index: 1;
@@ -43,13 +51,10 @@
 }
 
 .section {
-  margin: 0 auto;
-  width: 1400px;
   background-color: colors.$white;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 100px;
   gap: 72px;
 
   &_heading {
@@ -149,4 +154,8 @@
   &_decoration {
 
   }
+}
+
+.footer {
+  background-color: colors.$black;
 }
