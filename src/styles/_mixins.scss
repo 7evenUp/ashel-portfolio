@@ -29,6 +29,7 @@
 
 @mixin button {
   @include font-inter-regular;
+  display: block;
   padding: 8px 32px;
   border: 1px solid colors.$secondary;
   color: colors.$secondary;

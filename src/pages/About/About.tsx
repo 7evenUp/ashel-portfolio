@@ -1,6 +1,6 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import { SkillItem } from '../../components'
+import { Link, NavLink } from 'react-router-dom'
+import { SkillItem, Socials } from '../../components'
 import { uidata } from '../../uidata'
 import styles from './About.module.scss'
 
@@ -89,18 +89,23 @@ export default function About() {
           </figure>
           <div className={styles.footer_top}>
             <div className={styles.footer_top_left}>
-              <div>
-                <h4>Navigation</h4>
-                <div>
-                  <Link to={'/about'}>About active</Link>
-                  <Link to={'/about'}>Projects</Link>
+              <div className={styles.contacts}>
+                <h4 className={styles.contacts_heading}>Navigation</h4>
+                <div className={styles.contacts_links}>
+                  <NavLink className={styles.navlink} to={'/'}>{({isActive}) => (
+                    isActive ? '<About active />' : '<About />'
+                  )}</NavLink>
+                  <NavLink className={styles.navlink} to={'/projects'}>{({isActive}) => (
+                    isActive ? '<Projects active />' : '<Projects />'
+                  )}</NavLink>
                 </div>
               </div>
-              <div>
-                <h4>Contact me</h4>
-                <div>
-                  <a href='mailto:sheludeshev.artyom@mail.ru'>@mail.me</a>
-                  <a href='https://t.me/x7evenUpx' target={'_blank'} rel="noreferrer">t.me/x7evenUpx</a>
+              <span className={styles.separator}/>
+              <div className={styles.contacts}>
+                <h4 className={styles.contacts_heading}>Contact me</h4>
+                <div className={styles.contacts_links}>
+                  <a className={styles.link} href='mailto:sheludeshev.artyom@mail.ru'>@mail.me</a>
+                  <a className={styles.link} href='https://t.me/x7evenUpx' target={'_blank'} rel="noreferrer">t.me/x7evenUpx</a>
                 </div>
               </div>
             </div>
@@ -117,14 +122,10 @@ export default function About() {
               </div>
             </div>
           </div>
+          <span className={styles.separator} />
           <div className={styles.footer_bottom}>
             <span className={styles.copyright}>© Artyom Sheludeshev 2022</span>
-            <ul className={styles.socials}>
-              <li>VK</li>
-              <li>GH</li>
-              <li>IN</li>
-              <li>TW</li>
-            </ul>
+            <Socials />
           </div>
         </footer>
       </div>
