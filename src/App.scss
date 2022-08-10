@@ -19,7 +19,8 @@
 
   &_navigation_wrapper {
     position: fixed;
-    right: 10px;
-    top: 10px;
+    right: 0;
+    top: 0;
+    z-index: 10;
   }
 }

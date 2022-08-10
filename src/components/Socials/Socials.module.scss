@@ -8,6 +8,25 @@
     width: 40px;
     height: 40px;
     transition: all 0.25s ease-in-out;
+    background-size: cover;
+    
+    &:hover {
+      opacity: 0.85;
+    }
+  }
+}
+
+.list_small {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  span {
+    display: block;
+    width: 30px;
+    height: 30px;
+    transition: all 0.25s ease-in-out;
+    background-size: cover;
     
     &:hover {
       opacity: 0.85;

@@ -18,12 +18,15 @@ const socialsData = [
     link: 'https://dribbble.com/7_even_Up',
     src: 'dribbble_icon.svg'
   },
-
 ]
 
-export default function Socials() {
+type SocialsProps = {
+  small?: boolean
+}
+
+export default function Socials({small}: SocialsProps) {
   return (
-    <ul className={styles.list}>
+    <ul className={small ? styles.list_small : styles.list}>
       {socialsData.map((social, index) => (
         <li key={index}><a href={social.link} target={"_blank"} rel="noreferrer">
           <span style={{backgroundImage: `url(${social.src})`}}/>
