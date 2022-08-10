@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
-import { SkillItem, Socials } from '../../components'
+import { SkillItem, Socials, TextureSvg } from '../../components'
 import { uidata } from '../../uidata'
 import styles from './About.module.scss'
 
@@ -66,7 +66,7 @@ export default function About() {
             <div className={styles.skills}>
               {Object.entries(uidata).map(obj => (
                 <div className={styles.skill}>
-                  <img src={`${obj[0]}_illustration.png`} className={styles.skill_image} />
+                  <img src={`${obj[0]}_illustration.png`} alt={obj[0]} className={styles.skill_image} />
                   <h4 className={styles.skill_heading}>{obj[0]}</h4>
                   <ul className={styles.skill_list}>
                     {obj[1].map(el => (
@@ -81,12 +81,12 @@ export default function About() {
           </div>
         </section>
         <footer className={styles.footer}>
-          <figure className={styles.footer_decoration_left}>
-            ...svg left top
-          </figure>
-          <figure className={styles.footer_decoration_right}>
-            ...svg right bottom
-          </figure>
+          <div className={styles.footer_decoration_left}>
+            <TextureSvg />
+          </div>
+          <div className={styles.footer_decoration_right}>
+            <TextureSvg />
+          </div>
           <div className={styles.footer_top}>
             <div className={styles.footer_top_left}>
               <div className={styles.contacts}>

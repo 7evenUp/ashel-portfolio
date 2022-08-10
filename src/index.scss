@@ -9,6 +9,7 @@
 
 body {
   @include mixins.font-inter-regular;
+  background-color: colors.$white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
