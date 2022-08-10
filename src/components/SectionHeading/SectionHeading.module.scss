@@ -1,0 +1,30 @@
+@use '../../styles/colors';
+@use '../../styles/mixins';
+
+.section_heading {
+  @include mixins.font-inconsolata-extra-light;
+  font-size: 40px;
+  text-align: center;
+  color: colors.$black;
+  position: relative;
+  width: max-content;
+  margin-inline: auto;
+
+  &::before, &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    height: 1px;
+    width: 150px;
+    background-color: colors.$black;
+  }
+
+  &::before {
+    left: calc(-150px - 32px);
+  }
+
+  &::after {
+    right: calc(-150px - 32px);
+  }
+}

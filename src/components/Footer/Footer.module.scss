@@ -1,0 +1,136 @@
+@use '../../styles/colors';
+@use '../../styles/mixins';
+
+.footer {
+  background-color: colors.$black;
+  padding: 64px 64px 140px 64px;
+  position: relative;
+
+  &_decoration_left {
+    position: absolute;
+    left: -50px;
+    top: -40px;
+    
+    svg {
+      circle {
+        fill: colors.$secondary;
+      }
+    }
+  }
+
+  &_decoration_right {
+    position: absolute;
+    right: -50px;
+    bottom: -40px;
+    svg {
+      circle {
+        fill: colors.$primary;
+      }
+    }
+  }
+
+  &_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 32px;
+
+    &_left {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    &_right {
+      display: flex;
+      gap: 60px;
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+
+        h4 {
+          @include mixins.font-inconsolata-bold;
+          font-size: 32px;
+          color: colors.$secondary;
+          width: 208px;
+        }
+
+        p {
+          @include mixins.font-inter-regular;
+          font-size: 24px;
+          color: colors.$white;
+          width: 240px;
+        }
+
+        a {
+          @include mixins.button;
+  
+          &:hover {
+            color: colors.$black;
+          }
+        }
+      }
+    }
+  }
+
+  &_bottom {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .copyright {
+      @include mixins.font-inter-regular;
+      font-size: 24px;
+      color: colors.$beige;
+    }
+  }
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  &_heading {
+    @include mixins.font-inter-regular;
+    font-size: 32px;
+    color: colors.$beige;
+  }
+
+  &_links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+.navlink {
+  @include mixins.font-inconsolata-bold;
+  font-size: 24px;
+  color: colors.$white;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    opacity: 0.85;
+  }
+}
+
+.link {
+  @include mixins.font-inter-regular;
+  font-size: 24px;
+  color: colors.$beige;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    opacity: 0.85;
+  }
+}
+
+.separator {
+  display: block;
+  height: 1px;
+  width: 100%;
+  background-color: colors.$gray;
+}
