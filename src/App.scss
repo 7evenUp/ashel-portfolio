@@ -1,3 +1,6 @@
+@use './styles/mixins';
+@use './styles/colors';
+
 .App {
   // display: flex;
   // justify-content: center;
@@ -5,9 +8,13 @@
   // width: 100vw;
 
   &_heading {
+    @include mixins.font-inconsolata-bold;
+    color: colors.$primary;
+    font-size: 32px;
+    width: 128px;
     position: fixed;
-    left: 10px;
-    top: 10px;
+    left: 40px;
+    top: 40px;
   }
 
   &_navigation_wrapper {
