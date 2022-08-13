@@ -1,6 +1,6 @@
 import React from 'react'
-import { Link, NavLink } from 'react-router-dom'
-import { Footer, SectionHeading, SkillItem, Socials, TextureSvg } from '../../components'
+import { Link } from 'react-router-dom'
+import { Footer, SectionHeading, SkillItem, TextureSvg } from '../../components'
 import { uidata } from '../../uidata'
 import styles from './About.module.scss'
 
@@ -31,17 +31,18 @@ export default function About() {
             <div className={styles.fields}>
               <div className={styles.field}>
                 <div className={styles.field_info}>
-                  <h4 className={styles.field_heading}>Design</h4>
+                  <div className={styles.field_info_designed_header}>
+                    <h4 className={styles.field_heading}>Design</h4>
+                    <div className={styles.field_heading_svg}>
+                      <TextureSvg />
+                    </div>
+                  </div>
                   <p className={styles.field_text}>Probably I'm not the best UI/UX designer you'll ever see, but I Do design. And I make my works with rich user experiences while staying fashionable</p>
                 </div>
-                <div className={styles.field_decoration}>
-                  {/* SVGs */}
-                </div>
+                <div className={`${styles.field_decoration} ${styles.design}`} />
               </div>
               <div className={styles.field}>
-                <div className={styles.field_decoration}>
-                  {/* SVGs */}
-                </div>
+                <div className={`${styles.field_decoration} ${styles.web}`} />
                 <div className={styles.field_info}>
                   <h4 className={styles.field_heading}>Web dev</h4>
                   <p className={styles.field_text}>I build javascript applications with right tools and libraries, and can deliver fast, resilent solutions optimized for scale - performance and scalability are my priorities</p>
@@ -52,9 +53,7 @@ export default function About() {
                   <h4 className={styles.field_heading}>Mobile dev</h4>
                   <p className={styles.field_text}>Haven't created any commercial mobile app yet, but I've built some for my own purposes such as automation of my life routine</p>
                 </div>
-                <div className={styles.field_decoration}>
-                  {/* SVGs */}
-                </div>
+                <div className={`${styles.field_decoration} ${styles.mobile}`} />
               </div>
             </div>
           </div>
