@@ -7,6 +7,10 @@
   padding: 0;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   @include mixins.font-inter-regular;
   background-color: colors.$white;
