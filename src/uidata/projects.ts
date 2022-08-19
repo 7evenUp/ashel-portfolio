@@ -36,7 +36,7 @@ export const projects: Array<IProject> = [
     heading: 'Ashel portfolio',
     subheading: 'It\'s your current page by the way',
     date: 'July 2022',
-    stack: ['React', 'Framer-motion', 'Sass', 'React-router-dom v6'],
+    stack: ['React', 'Framer-motion', 'Sass', 'React Router 6'],
     links: [
       {
         label: 'Source',
