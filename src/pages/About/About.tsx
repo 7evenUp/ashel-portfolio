@@ -63,12 +63,12 @@ export default function About() {
           <SectionHeading heading='My Skills'/>
           <div className={styles.section_content}>
             <div className={styles.skills}>
-              {Object.entries(uidata).map(obj => (
-                <div className={styles.skill}>
+              {Object.entries(uidata).map((obj, i) => (
+                <div key={i} className={styles.skill}>
                   <img src={`${obj[0]}_illustration.png`} alt={obj[0]} className={styles.skill_image} />
                   <h4 className={styles.skill_heading}>{obj[0]}</h4>
                   <ul className={styles.skill_list}>
-                    {obj[1].map(el => <SkillItem name={el.name} level={el.level} />)}
+                    {obj[1].map((el, i) => <SkillItem key={i} name={el.name} level={el.level} />)}
                   </ul>
                 </div>
               ))}
