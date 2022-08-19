@@ -16,6 +16,17 @@ body {
   background-color: colors.$white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  &::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background-color: colors.$white;
+    border-radius: 1ex;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: colors.$gray;
+  }
 }
 
 ul, ol {
