@@ -1,10 +1,12 @@
 import React from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink, useLocation } from 'react-router-dom'
 import Socials from '../Socials/Socials'
 import TextureSvg from '../TextureSvg/TextureSvg'
 import styles from './Footer.module.scss'
 
 export default function Footer() {
+  const location = useLocation()
+
   return (
     <footer className={styles.footer}>
       <div className={styles.footer_decoration_left}>
@@ -41,11 +43,13 @@ export default function Footer() {
             <p>About frontend dev, crypto trading, design and life</p>
             <a href='https://ashel.vercel.app' target={'_blank'} rel="noreferrer">Read my blog</a>
           </div>
-          <div>
-            <h4>Make sure to see my works</h4>
-            <p>Open source, UI kits, UI libraries, websites and more</p>
-            <Link to={'/projects'}>See my works</Link>
-          </div>
+          { location.pathname !== '/projects' && (
+            <div>
+              <h4>Make sure to see my works</h4>
+              <p>Open source, UI kits, UI libraries, websites and more</p>
+              <Link to={'/projects'}>See my works</Link>
+            </div>
+          )}
         </div>
       </div>
       <span className={styles.separator} />
