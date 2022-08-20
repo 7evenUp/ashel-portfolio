@@ -13,13 +13,6 @@
     top: 40px;
   }
 
-  &_navigation_wrapper {
-    position: fixed;
-    right: 0;
-    top: 0;
-    z-index: 10;
-  }
-
   &_preloader {
     width: 100vw;
     height: 100vh;
@@ -28,6 +21,9 @@
     top: 0;
     left: 0;
     background-color: lightsalmon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 

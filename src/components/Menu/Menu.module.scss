@@ -1,27 +1,38 @@
 @use '../../styles/colors';
 @use '../../styles/mixins';
 
-.btn {
-  @include mixins.font-inconsolata-bold;
-  font-size: 20px;
-  color: colors.$secondary;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  transition: all 0.25s ease-in-out;
-
-  &:hover {
-    opacity: 0.8;
-  }
+.menu_wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .menu {
+  position: absolute;
+  right: 0;
+  top: 0;
   background-color: colors.$black;
   padding: 50px 32px;
   display: flex;
   flex-direction: column;
   gap: 40px;
   width: 260px;
+
+  &_btn {
+    position: relative;
+    z-index: 2;
+    @include mixins.font-inconsolata-bold;
+    font-size: 20px;
+    color: colors.$secondary;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
 
   &_navigation {
     display: flex;

@@ -30,9 +30,8 @@ function App() {
             animate={{ opacity: 1 }}
           >
             <h1 className='App_heading'>Ashel Portfolio</h1>
-            <div className='App_navigation_wrapper'>
-              <Menu />
-            </div>
+
+            <Menu />
             
             <Outlet />
           </motion.div>
