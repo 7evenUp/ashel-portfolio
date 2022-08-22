@@ -6,7 +6,7 @@
   &_heading {
     @include mixins.font-inconsolata-bold;
     color: colors.$primary;
-    font-size: 32px;
+    font-size: 3.2rem;
     width: 128px;
     position: fixed;
     left: 40px;

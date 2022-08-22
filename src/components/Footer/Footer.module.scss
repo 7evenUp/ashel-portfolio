@@ -51,14 +51,14 @@
 
         h4 {
           @include mixins.font-inconsolata-bold;
-          font-size: 32px;
+          font-size: 3.2rem;
           color: colors.$secondary;
           width: 208px;
         }
 
         p {
           @include mixins.font-inter-regular;
-          font-size: 24px;
+          font-size: 2.4rem;
           color: colors.$white;
           width: 240px;
         }
@@ -82,7 +82,7 @@
 
     .copyright {
       @include mixins.font-inter-regular;
-      font-size: 24px;
+      font-size: 2.4rem;
       color: colors.$beige;
     }
   }
@@ -95,7 +95,7 @@
 
   &_heading {
     @include mixins.font-inter-regular;
-    font-size: 32px;
+    font-size: 3.2rem;
     color: colors.$beige;
   }
 
@@ -108,7 +108,7 @@
 
 .navlink {
   @include mixins.font-inconsolata-bold;
-  font-size: 24px;
+  font-size: 2.4rem;
   color: colors.$white;
   transition: all 0.2s ease-in-out;
 
@@ -119,7 +119,7 @@
 
 .link {
   @include mixins.font-inter-regular;
-  font-size: 24px;
+  font-size: 2.4rem;
   color: colors.$beige;
   transition: all 0.2s ease-in-out;
 

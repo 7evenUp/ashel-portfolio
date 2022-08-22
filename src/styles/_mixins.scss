@@ -22,7 +22,7 @@
 
 @mixin hero-highlights-font {
   @include font-inter-light;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 140%;
   color: colors.$secondary;
 }
@@ -33,7 +33,7 @@
   padding: 8px 32px;
   border: 1px solid colors.$secondary;
   color: colors.$secondary;
-  font-size: 24px;
+  font-size: 2.4rem;
   width: max-content;
   transition: all 0.15s ease-in-out;
 

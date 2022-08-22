@@ -34,6 +34,9 @@
     z-index: -1;
     width: 649px;
     height: 484px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
     background-image: url('./media/avatar_shapes.svg');
   }
 
@@ -43,7 +46,7 @@
     height: 400px;
     margin-top: -24px;
     background-color: #fff;
-    background-size: cover;
+    background-size: contain;
     background-position-x: center;
     margin-left: -40px;
     background-image: url('./media/handsome_boy.png');
@@ -64,14 +67,14 @@
 
   &_heading {
     @include mixins.font-inconsolata-bold;
-    font-size: 48px;
+    font-size: 4.8rem;
     color: colors.$secondary;
     width: 216px;
   }
 
   &_desc {
     @include mixins.font-inter-regular;
-    font-size: 24px;
+    font-size: 2.4rem;
     color: colors.$white;
     width: 445px;
   }
@@ -122,7 +125,7 @@
   &_heading {
     @include mixins.font-inconsolata-bold;
     color: colors.$primary;
-    font-size: 96px;
+    font-size: 9.6rem;
 
     &_svg {
       position: absolute;
@@ -134,7 +137,7 @@
 
   &_text {
     @include mixins.font-inter-regular;
-    font-size: 24px;
+    font-size: 2.4rem;
     line-height: 140%;
     color: colors.$black;
     width: 630px;
@@ -143,7 +146,7 @@
   &_decoration {
     position: relative;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 
     &.design {
       margin-right: 230px;
@@ -186,7 +189,7 @@
 
   &_heading {
     @include mixins.font-inter-regular;
-    font-size: 32px;
+    font-size: 3.2rem;
     text-transform: capitalize;
   }
 
@@ -195,4 +198,14 @@
     flex-direction: column;
     gap: 8px;
   }
+}
+
+@media (max-width: 1484px) {
+  .container {
+
+  }
+}
+
+@media (max-width: 1260px) {
+
 }

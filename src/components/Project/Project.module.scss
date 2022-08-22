@@ -46,7 +46,7 @@
       flex: 50%;
 
       p {
-        font-size: 24px;
+        font-size: 2.4rem;
         line-height: 140%;
         color: colors.$white;
       }
@@ -56,7 +56,7 @@
   &_heading {
     @include mixins.font-inconsolata-bold;
     color: colors.$white;
-    font-size: 32px;
+    font-size: 3.2rem;
     margin-bottom: 16px;
   }
 
@@ -68,7 +68,7 @@
     span {
       border: 1px solid colors.$white;
       color: colors.$white;
-      font-size: 18px;
+      font-size: 1.8rem;
       padding: 8px;
     }
   }
@@ -80,7 +80,7 @@
 
     a {
       text-decoration: underline;
-      font-size: 24px;
+      font-size: 2.4rem;
       color: colors.$white;
       transition: all 0.25s ease-in-out;
 
@@ -99,17 +99,17 @@
   h2 {
     @include mixins.font-inconsolata-bold;
     color: colors.$primary;
-    font-size: 40px;
+    font-size: 4rem;
   }
   
   span {
-    font-size: 24px;
+    font-size: 2.4rem;
     color: colors.$gray;
   }
 }
 
 .subheading {
   width: 60%;
-  font-size: 24px;
+  font-size: 2.4rem;
   color: colors.$black;
 }

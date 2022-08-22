@@ -22,7 +22,7 @@
     position: relative;
     z-index: 2;
     @include mixins.font-inconsolata-bold;
-    font-size: 20px;
+    font-size: 2rem;
     color: colors.$secondary;
     background-color: transparent;
     border: none;
@@ -47,7 +47,7 @@
 
     h4 {
       @include mixins.font-inter-regular;
-      font-size: 20px;
+      font-size: 2rem;
       color: colors.$beige;
     }
 
@@ -65,7 +65,7 @@
 
     h4 {
       @include mixins.font-inter-regular;
-      font-size: 20px;
+      font-size: 2rem;
       color: colors.$beige;
     }
   }
@@ -73,7 +73,7 @@
 
 .navlink {
   @include mixins.font-inconsolata-bold;
-  font-size: 18px;
+  font-size: 1.8rem;
   color: colors.$white;
   transition: all 0.2s ease-in-out;
 
@@ -84,7 +84,7 @@
 
 .link {
   @include mixins.font-inter-regular;
-  font-size: 16px;
+  font-size: 1.6rem;
   color: colors.$beige;
   transition: all 0.2s ease-in-out;
 

@@ -31,7 +31,7 @@ function App() {
           >
             <h1 className='App_heading'>Ashel Portfolio</h1>
 
-            <Menu />
+            {/* <Menu /> */}
             
             <Outlet />
           </motion.div>

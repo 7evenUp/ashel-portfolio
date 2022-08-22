@@ -24,7 +24,7 @@
 .label {
   @include mixins.font-inter-regular;
   color: colors.$gray;
-  font-size: 20px;
+  font-size: 2rem;
 
   &::first-letter {
     text-transform: uppercase;
