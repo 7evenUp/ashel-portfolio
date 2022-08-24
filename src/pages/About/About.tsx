@@ -8,12 +8,10 @@ export default function About() {
   return (
     <>
       <header className={styles.header}>
-        <div className={styles.image_wrapper}>
-          <figure className={styles.avatar}>
-            <span className={styles.avatar_shapes} />
-            <span className={styles.avatar_image}/>
-          </figure>
-        </div>
+        <figure className={styles.avatar}>
+          <span className={styles.avatar_shapes} />
+          <span className={styles.avatar_image}/>
+        </figure>
         <div className={styles.hero}>
             <h2 className={styles.hero_heading}>Frontend Developer</h2>
             <p className={styles.hero_desc}>I like to build creative products with great user experiences</p>

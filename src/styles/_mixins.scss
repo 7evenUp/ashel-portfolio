@@ -41,4 +41,50 @@
     background-color: colors.$secondary;
     color: colors.$primary;
   }
+
+  @include small-laptop {
+    padding: 8px 24px;
+  }
+}
+
+@mixin desktop {
+  @media (max-width: 1484px) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (max-width: 1260px) {
+    @content;
+  }
+}
+
+@mixin small-laptop {
+  @media (max-width: 1110px) {
+    @content;
+  }
+}
+
+@mixin big-tablet {
+  @media (max-width: 900px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin small-tablet {
+  @media (max-width: 600px) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media (max-width: 480px) {
+    @content;
+  }
 }
