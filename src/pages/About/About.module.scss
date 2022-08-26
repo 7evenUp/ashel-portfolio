@@ -41,6 +41,14 @@
     width: calc(100% - 10rem);
     margin-inline: auto;
   }
+
+  @include mixins.tablet {
+    gap: 120px;
+  }
+
+  @include mixins.small-tablet {
+    width: calc(100% - 5rem);
+  }
 }
 
 .avatar {
@@ -210,17 +218,30 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
+
+  @include mixins.laptop {
+    gap: 64px;
+  }
+
+  @include mixins.small-tablet {
+    gap: 48px;
+  }
 }
 
 .field {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 48px;
 
   &_info {
     display: flex;
     flex-direction: column;
     gap: 32px;
+
+    @include mixins.small-tablet {
+      gap: 16px;
+    }
 
     &_designed_header {
       position: relative;
@@ -238,11 +259,33 @@
     color: colors.$primary;
     font-size: 9.6rem;
 
+    @include mixins.small-tablet {
+      font-size: 7.5rem;
+    }
+
+    @include mixins.phone {
+      font-size: 5.5rem;
+    }
+
     &_svg {
       position: absolute;
       left: 190px;
       top: 17px;
       z-index: -1;
+
+      @include mixins.small-laptop {
+        left: 18em;
+        top: 0.6em;
+      }
+
+      @include mixins.small-tablet {
+        left: 15em;
+        top: -2.4em;
+      }
+
+      @include mixins.phone {
+        display: none;
+      }
     }
   }
 
@@ -251,7 +294,16 @@
     font-size: 2.4rem;
     line-height: 140%;
     color: colors.$black;
-    width: 630px;
+    max-width: 630px;
+
+    @include mixins.small-tablet {
+      font-size: 2.2rem;
+      line-height: 160%;
+    }
+
+    @include mixins.phone {
+      font-size: 2rem;
+    }
   }
 
   &_decoration {
@@ -259,11 +311,19 @@
     background-repeat: no-repeat;
     background-size: contain;
 
+    @include mixins.tablet {
+      display: none;
+    }
+
     &.design {
       margin-right: 230px;
       background-image: url('./media/design_decoration.svg');
       width: 396px;
       height: 163px;
+
+      @include mixins.laptop {
+        margin: 0;
+      }
     }
 
     &.web {
@@ -271,6 +331,10 @@
       background-image: url('./media/web_dev_decoration.svg');
       width: 262.8px;
       height: 203.92px;
+
+      @include mixins.laptop {
+        margin: 0;
+      }
     }
 
     &.mobile {
@@ -278,6 +342,10 @@
       background-image: url('./media/mobile_decoration.svg');
       width: 225.29px;
       height: 197px;
+
+      @include mixins.laptop {
+        margin: 0;
+      }
     }
   }
 }
