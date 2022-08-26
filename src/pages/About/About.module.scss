@@ -354,6 +354,8 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-evenly;
+  gap: 48px;
+  flex-wrap: wrap;
 }
 
 .skill {
@@ -362,19 +364,65 @@
   align-items: center;
   gap: 24px;
 
+  @include mixins.tablet {
+    flex-direction: row;
+    gap: 48px;
+  }
+
+  @include mixins.small-tablet {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  @include mixins.phone {
+    flex-basis: 100%;
+  }
+
   &_image {
     height: 220px;
+
+    @include mixins.big-tablet {
+      height: 180px;
+    }
+
+    @include mixins.tablet {
+      order: 1;
+    }
+
+    @include mixins.small-tablet {
+      order: 0;
+    }
+
+    @include mixins.phone {
+      height: 150px;
+    }
   }
 
   &_heading {
     @include mixins.font-inter-regular;
     font-size: 3.2rem;
     text-transform: capitalize;
+
+    @include mixins.tablet {
+      align-self: flex-start;
+    }
+
+    @include mixins.small-tablet {
+      align-self: center;
+    }
   }
 
   &_list {
     display: flex;
     flex-direction: column;
     gap: 8px;
+
+    @include mixins.tablet {
+      align-self: flex-start;
+    }
+
+    @include mixins.small-tablet {
+      align-self: center;
+    }
   }
 }
