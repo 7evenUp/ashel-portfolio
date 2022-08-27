@@ -35,15 +35,34 @@
     align-items: flex-start;
     margin-bottom: 32px;
 
+    @include mixins.small-laptop {
+      flex-direction: column;
+      align-items: center;
+      gap: 48px;
+    }
+
     &_left {
       display: flex;
       flex-direction: column;
       gap: 32px;
+
+      @include mixins.small-laptop {
+        flex-direction: row;
+
+        .separator {
+          display: none;
+        }
+      }
     }
 
     &_right {
       display: flex;
       gap: 60px;
+
+      @include mixins.small-laptop {
+        order: -1;
+      }
+
       div {
         display: flex;
         flex-direction: column;
