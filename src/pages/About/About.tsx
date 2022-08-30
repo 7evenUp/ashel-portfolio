@@ -13,11 +13,13 @@ export default function About() {
           <span className={styles.avatar_image}/>
         </figure>
         <div className={styles.hero}>
-            <h2 className={styles.hero_heading}>Frontend Developer</h2>
-            <p className={styles.hero_desc}>I like to build creative products with great user experiences</p>
+            <div>
+              <h2 className={styles.hero_heading}>Frontend Developer</h2>
+            </div>
+            <p className={styles.hero_desc}>I have over three years of extensive experience with building creative products from scratch</p>
             <ul className={styles.hero_highlights}>
-              <li>Over three years of building web tools and UI designs</li>
-              <li>Highly skilled at creating products from scratch</li>
+              <li>I create delightful apps while understanding industry UI/UX best practices</li>
+              <li>I build complex, accessible UIs that scale and feel light</li>
             </ul>
             <Link to='/projects' className={styles.hero_btn}>See my works</Link>
         </div>
@@ -74,6 +76,12 @@ export default function About() {
           </div>
         </section>
         
+        <div className={styles.computer_footer}>
+          <Footer />
+        </div>
+      </div>
+
+      <div className={styles.mobile_footer}>
         <Footer />
       </div>
     </>
