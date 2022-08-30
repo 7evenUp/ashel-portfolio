@@ -6,6 +6,18 @@
   padding: 64px 64px 140px 64px;
   position: relative;
 
+  @include mixins.big-tablet {
+    padding-bottom: 64px;
+  }
+
+  @include mixins.tablet {
+    padding-inline: 32px;
+  }
+
+  @include mixins.phone {
+    padding-inline: 16px;
+  }
+
   &_decoration_left {
     position: absolute;
     left: -50px;
@@ -16,16 +28,25 @@
         fill: colors.$secondary;
       }
     }
+
+    @include mixins.small-laptop {
+      display: none;
+    }
   }
 
   &_decoration_right {
     position: absolute;
     right: -50px;
     bottom: -40px;
+
     svg {
       circle {
         fill: colors.$primary;
       }
+    }
+
+    @include mixins.small-laptop {
+      display: none;
     }
   }
 
@@ -35,10 +56,18 @@
     align-items: flex-start;
     margin-bottom: 32px;
 
-    @include mixins.small-laptop {
+    @include mixins.big-tablet {
       flex-direction: column;
       align-items: center;
-      gap: 48px;
+      gap: 32px;
+    }
+
+    .separator {
+      display: none;
+
+      @include mixins.big-tablet {
+        display: block;
+      }
     }
 
     &_left {
@@ -46,12 +75,20 @@
       flex-direction: column;
       gap: 32px;
 
-      @include mixins.small-laptop {
+      @include mixins.big-tablet {
         flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
 
         .separator {
           display: none;
         }
+      }
+
+      @include mixins.phone {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 48px;
       }
     }
 
@@ -59,14 +96,26 @@
       display: flex;
       gap: 60px;
 
-      @include mixins.small-laptop {
-        order: -1;
+      @include mixins.big-tablet {
+        width: 100%;
+        justify-content: space-between;
+        gap: 48px;
+        flex-wrap: wrap;
+      }
+
+      @include mixins.small-tablet {
+        flex-wrap: wrap;
+        justify-content: center;
       }
 
       div {
         display: flex;
         flex-direction: column;
         gap: 32px;
+
+        @include mixins.small-tablet {
+          gap: 24px;
+        }
 
         h4 {
           @include mixins.font-inconsolata-bold;
@@ -99,10 +148,19 @@
     justify-content: space-between;
     align-items: center;
 
+    @include mixins.tablet {
+      flex-direction: column-reverse;
+      gap: 32px;
+    }
+
     .copyright {
       @include mixins.font-inter-regular;
       font-size: 2.4rem;
       color: colors.$beige;
+
+      @include mixins.phone {
+        font-size: 2.2rem;
+      }
     }
   }
 }
@@ -111,6 +169,10 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
+
+  @include mixins.phone {
+    gap: 24px;
+  }
 
   &_heading {
     @include mixins.font-inter-regular;

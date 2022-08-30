@@ -182,7 +182,7 @@
     }
 
     @include mixins.tablet {
-      width: 90%;
+      width: 85%;
     }
   }
 
@@ -424,5 +424,19 @@
     @include mixins.small-tablet {
       align-self: center;
     }
+  }
+}
+
+.computer_footer {
+  @include mixins.small-laptop {
+    display: none;
+  }
+}
+
+.mobile_footer {
+  display: none;
+  
+  @include mixins.small-laptop {
+    display: block;
   }
 }

@@ -34,6 +34,7 @@ const Footer = () => (
           </div>
         </div>
       </div>
+      <span className={styles.separator}/>
       <div className={styles.footer_top_right}>
         <div>
           <h4>I also write, sometimes</h4>

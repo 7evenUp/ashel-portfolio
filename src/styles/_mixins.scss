@@ -59,6 +59,12 @@
   }
 }
 
+@mixin large-monitor {
+  @media (min-width: 1800px) {
+    @content;
+  }
+}
+
 @mixin small-laptop {
   @media (max-width: 1110px) {
     @content;

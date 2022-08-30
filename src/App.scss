@@ -8,12 +8,12 @@
     color: colors.$primary;
     font-size: 3.2rem;
     width: 128px;
-    position: fixed;
+    position: absolute;
     left: 40px;
     top: 40px;
 
-    @include mixins.laptop {
-      position: absolute;
+    @include mixins.large-monitor {
+      position: fixed;
     }
   }
 
