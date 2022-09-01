@@ -5,13 +5,31 @@
   width: 100%;
   display: flex;
   gap: 16px;
+
+  @include mixins.tablet {
+    flex-direction: column-reverse;
+  }
 }
 
 .image_wrapper {
   flex-basis: 40%;
 
+  @include mixins.tablet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   img {
     max-width: 100%;
+    height: 300px;
+    object-fit: cover;
+    min-height: 200px;
+
+    @include mixins.tablet {
+      max-width: 90%;
+      height: auto;
+    }
   }
 }
 
@@ -27,6 +45,14 @@
     gap: 24px;
     padding: 32px;
     background-color: colors.$secondary;
+
+    @include mixins.small-laptop {
+      padding: 24px;
+    }
+
+    @include mixins.phone {
+      padding: 16px;
+    }
   }
 
   &_bottom {
@@ -34,9 +60,22 @@
     background-color: colors.$primary;
     display: flex;
     justify-content: space-between;
+    gap: 24px;
+
+    @include mixins.small-laptop {
+      padding: 24px;
+    }
+
+    @include mixins.phone {
+      padding: 16px;
+    }
+
+    @include mixins.phone {
+      flex-direction: column-reverse;
+    }
 
     &_left {
-      flex: 50%;
+      flex: 45%;
       display: flex;
       flex-direction: column;
       gap: 24px;
@@ -49,6 +88,10 @@
         font-size: 2.4rem;
         line-height: 140%;
         color: colors.$white;
+
+        @include mixins.small-laptop {
+          font-size: 2.2rem;
+        }
       }
     }
   }
@@ -65,11 +108,19 @@
     flex-wrap: wrap;
     gap: 16px;
 
+    @include mixins.big-tablet {
+      gap: 8px;
+    }
+
     span {
       border: 1px solid colors.$white;
       color: colors.$white;
       font-size: 1.8rem;
       padding: 8px;
+
+      @include mixins.big-tablet {
+        padding: 6px;
+      }
     }
   }
 
@@ -95,16 +146,27 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  gap: 16px;
 
   h2 {
     @include mixins.font-inconsolata-bold;
     color: colors.$primary;
     font-size: 4rem;
+    max-width: 320px;
+
+    @include mixins.phone {
+      font-size: 3.5rem;
+    }
   }
   
   span {
     font-size: 2.4rem;
     color: colors.$gray;
+    flex-shrink: 0;
+
+    @include mixins.phone {
+      font-size: 2.2rem;
+    }
   }
 }
 
@@ -112,4 +174,8 @@
   width: 60%;
   font-size: 2.4rem;
   color: colors.$black;
+
+  @include mixins.phone {
+    width: 100%;
+  }
 }

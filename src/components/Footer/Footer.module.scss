@@ -178,6 +178,10 @@
     @include mixins.font-inter-regular;
     font-size: 3.2rem;
     color: colors.$beige;
+
+    @include mixins.phone {
+      text-align: center;
+    }
   }
 
   &_links {
