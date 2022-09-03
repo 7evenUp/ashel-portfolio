@@ -1,10 +1,17 @@
+import { motion } from 'framer-motion'
 import { Link, NavLink } from 'react-router-dom'
 import Socials from '../Socials/Socials'
 import TextureSvg from '../TextureSvg/TextureSvg'
 import styles from './Footer.module.scss'
 
 const Footer = () => (
-  <footer className={styles.footer}>
+  <motion.footer
+    initial={{ opacity: 0, y: 200 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true }}
+    transition={{ duration: 1 }}
+    className={styles.footer}
+  >
     <div className={styles.footer_decoration_left}>
       <TextureSvg />
     </div>
@@ -54,7 +61,7 @@ const Footer = () => (
       <span className={styles.copyright}>© Artyom Sheludeshev 2022</span>
       <Socials />
     </div>
-  </footer>
+  </motion.footer>
 )
 
 export default Footer

@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import { IProject } from '../../uidata/projects'
 import styles from './Project.module.scss'
 
@@ -12,19 +13,37 @@ const Project = ({
 }: IProject) => {
   return (
     <div className={styles.container}>
-      <div className={styles.image_wrapper}>
+      <motion.div
+        initial={{ opacity: 0, x: -100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1 }}
+        className={styles.image_wrapper}
+      >
         <img className={styles.image} src={img} alt={heading}/>
-      </div>
+      </motion.div>
       
       <div className={styles.info}>
-        <div className={styles.info_top}>
+        <motion.div 
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
+          className={styles.info_top}
+        >
           <div className={styles.heading}>
             <h2>{heading}</h2>
             <span>{date}</span>
           </div>
           <p className={styles.subheading}>{subheading}</p>
-        </div>
-        <div className={styles.info_bottom}>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
+          className={styles.info_bottom}
+        >
           <div className={styles.info_bottom_left}>
             <div>
               <h3 className={styles.info_heading}>Technologies</h3>
@@ -50,7 +69,7 @@ const Project = ({
             <h3 className={styles.info_heading}>Description</h3>
             <p>{description}</p>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   )
