@@ -24,10 +24,16 @@
     z-index: 1000;
     top: 0;
     left: 0;
-    background-color: lightsalmon;
+    background-color: colors.$primary;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    h1 {
+      @include mixins.font-inconsolata-bold;
+      color: colors.$white;
+      font-size: 14px;
+    }
   }
 }
 

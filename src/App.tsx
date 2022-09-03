@@ -1,15 +1,13 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.scss'
-import { Menu } from './components'
 import { Outlet } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
 
-function App() {
+const App = () => {
   const [loading, setLoading] = useState(true)
   useEffect(() => {
-    setTimeout(() => setLoading(false), 2000)
+    setTimeout(() => setLoading(false), 1000)
   }, [])
-
 
   return (
     <div className="App">
@@ -20,9 +18,9 @@ function App() {
               key="preloader"
               initial={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              transition={{ duration: 2 }}
+              transition={{ duration: 3 }}
             >
-              <h1>= = = Loading = = =</h1>
+              <h1>... Loading Ashel's data ...</h1>
             </motion.div>
         ) : (
           <motion.div
@@ -31,8 +29,6 @@ function App() {
           >
             <h1 className='App_heading'>Ashel Portfolio</h1>
 
-            {/* <Menu /> */}
-            
             <Outlet />
           </motion.div>
         )}
@@ -41,4 +37,4 @@ function App() {
   )
 }
 
-export default App;
+export default App

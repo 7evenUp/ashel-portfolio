@@ -1,4 +1,3 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 import { Footer, SectionHeading, SkillItem, TextureSvg } from '../../components'
 import { uidata } from '../../uidata'

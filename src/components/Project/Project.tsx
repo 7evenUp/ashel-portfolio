@@ -1,4 +1,3 @@
-import React from 'react'
 import { IProject } from '../../uidata/projects'
 import styles from './Project.module.scss'
 

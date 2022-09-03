@@ -1,4 +1,3 @@
-import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import Socials from '../Socials/Socials'
 import TextureSvg from '../TextureSvg/TextureSvg'
