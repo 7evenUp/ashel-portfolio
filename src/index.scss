@@ -19,14 +19,21 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   &::-webkit-scrollbar {
-    width: 5px;
-    height: 5px;
+    width: 8px;
+    height: 8px;
     background-color: colors.$white;
     border-radius: 1ex;
+    padding: 5px;
   }
 
   &::-webkit-scrollbar-thumb {
     background-color: colors.$gray;
+    border-inline: 1px solid colors.$white;
+    transition: all 0.25s ease-in;
+
+    &:hover {
+      background-color: colors.$black;
+    }
   }
 }
 
