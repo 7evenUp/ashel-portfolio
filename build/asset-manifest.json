@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "./static/css/main.a2054e5f.css",
+    "main.js": "./static/js/main.ae122071.js",
+    "static/media/handsome_boy.png": "./static/media/handsome_boy.57fa3e9675d244478548.png",
+    "static/media/avatar_shapes.svg": "./static/media/avatar_shapes.4ae49ed171fd0fab05b6.svg",
+    "static/media/design_decoration.svg": "./static/media/design_decoration.6e1e7385f22420dd4ec2.svg",
+    "static/media/web_dev_decoration.svg": "./static/media/web_dev_decoration.f9b8ed090b7d06fa8034.svg",
+    "static/media/mobile_decoration.svg": "./static/media/mobile_decoration.53ac1645e5b135f97066.svg",
+    "index.html": "./index.html",
+    "main.a2054e5f.css.map": "./static/css/main.a2054e5f.css.map",
+    "main.ae122071.js.map": "./static/js/main.ae122071.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a2054e5f.css",
+    "static/js/main.ae122071.js"
+  ]
+}
