@@ -48,7 +48,7 @@ const Footer = () => {
           <div>
             <h4>I also write, sometimes</h4>
             <p>About frontend dev, crypto trading, design and life</p>
-            <a href='https://ashel.vercel.app' target={'_blank'} rel="noreferrer">Read my blog</a>
+            <a href='https://www.ashel.site/' target={'_blank'} rel="noreferrer">Read my blog</a>
           </div>
           { location.pathname !== '/projects' && (
             <div>
