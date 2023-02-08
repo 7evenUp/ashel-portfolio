@@ -25,6 +25,7 @@
     height: 300px;
     object-fit: cover;
     min-height: 200px;
+    box-shadow: 0 0 10px 0 colors.$beige;
 
     @include mixins.tablet {
       max-width: 90%;
