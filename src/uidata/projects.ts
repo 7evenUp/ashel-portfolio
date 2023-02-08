@@ -17,19 +17,19 @@ export const projects: Array<IProject> = [
     img: 'project-ashel-blog.png',
     heading: 'Ashel website',
     subheading: 'My own blog and gallery website',
-    date: 'June 2022',
-    stack: ['Next.js', 'Firebase', 'Lexical'],
+    date: 'December 2022',
+    stack: ['Next.js', 'Supabase', 'MDX', 'Tailwindcss', 'Prisma', 'tRPC'],
     links: [
       {
-        label: 'Preview',
-        href: 'https://ashel.vercel.app/'
+        label: 'Deploy',
+        href: 'https://www.ashel.site/'
       },
       {
         label: 'Source',
-        href: 'https://github.com/7evenUp/ashel'
+        href: 'https://github.com/7evenUp/ashel-blog'
       }
     ],
-    description: 'I created this project from scratch: design, frontend, admin panel. One of cool features is text editor built with Lexical.'
+    description: 'I created this project from scratch: design, frontend, backend, admin panel. Styles are written using tailwind. Photos stored on Supabase.'
   },
   {
     img: 'project-ashel-portfolio.png',
@@ -45,5 +45,7 @@ export const projects: Array<IProject> = [
     ],
     description: 'Every self taught developer needs a portfolio, and I am no exception. It is simply beautiful website representing my skills and projects.'
   },
+  // {
 
+  // }
 ]
