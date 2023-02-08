@@ -14,7 +14,7 @@ export interface IProject {
 
 export const projects: Array<IProject> = [
   {
-    img: 'project-ashel-blog.png',
+    img: 'project_images/project-ashel-blog.png',
     heading: 'Ashel website',
     subheading: 'My own blog and gallery website',
     date: 'December 2022',
@@ -29,10 +29,10 @@ export const projects: Array<IProject> = [
         href: 'https://github.com/7evenUp/ashel-blog'
       }
     ],
-    description: 'I created this project from scratch: design, frontend, backend, admin panel. Styles are written using tailwind. Photos stored on Supabase.'
+    description: 'I created this project from scratch: design, frontend, backend, admin panel. Styles are written using tailwind. Photos stored on Supabase. Blog posts are written using MDX'
   },
   {
-    img: 'project-ashel-portfolio.png',
+    img: 'project_images/project-ashel-portfolio.png',
     heading: 'Ashel portfolio',
     subheading: 'It\'s your current page by the way',
     date: 'July 2022',

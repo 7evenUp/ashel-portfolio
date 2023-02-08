@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { Footer, SectionHeading, SkillItem, TextureSvg } from '../../components'
-import { uidata } from '../../uidata'
+import { fieldData } from '../../uidata'
 import styles from './About.module.scss'
 
 export default function About() {
@@ -81,22 +81,24 @@ export default function About() {
           <SectionHeading heading='My Skills'/>
           <div className={styles.section_content}>
             <div className={styles.skills}>
-              {Object.entries(uidata).map((obj, i) => (
-                <motion.div
-                  initial={{ opacity: 0, y: 100 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 1 }}
-                  key={i}
-                  className={styles.skill}
-                >
-                  <img src={`${obj[0]}_illustration.png`} alt={obj[0]} className={styles.skill_image} />
-                  <h4 className={styles.skill_heading}>{obj[0]}</h4>
-                  <ul className={styles.skill_list}>
-                    {obj[1].map((el, i) => <SkillItem key={i} name={el.name} level={el.level} />)}
-                  </ul>
-                </motion.div>
-              ))}
+              {fieldData.map((field, i) => {
+                return (
+                  <motion.div
+                    initial={{ opacity: 0, y: 100 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 1 }}
+                    key={i}
+                    className={styles.skill}
+                  >
+                    <img src={field.img} alt={field.title} className={styles.skill_image} />
+                    <h4 className={styles.skill_heading}>{field.title}</h4>
+                    <ul className={styles.skill_list}>
+                      {field.skills.map((skill, i) => <SkillItem key={i} name={skill.name} level={skill.level} />)}
+                    </ul>
+                  </motion.div>
+                )
+              })}
             </div>
           </div>
         </section>
