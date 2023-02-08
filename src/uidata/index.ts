@@ -32,6 +32,14 @@ export const fieldData: Field[] = [
         name: 'Tailwind CSS',
         level: 'skilled'
       },
+      {
+        name: 'React Query',
+        level: 'beginner'
+      },
+      {
+        name: 'tRPC',
+        level: 'beginner'
+      }
     ]
   },
   {
@@ -54,10 +62,15 @@ export const fieldData: Field[] = [
         name: 'MongoDB',
         level: 'beginner'
       },
+      
       {
         name: 'firebase',
         level: 'skilled'
       },
+      {
+        name: 'supabase',
+        level: 'skilled'
+      }
     ]
   },
   {
