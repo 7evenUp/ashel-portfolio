@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "./static/css/main.128457a3.css",
-    "main.js": "./static/js/main.68366d5c.js",
+    "main.css": "./static/css/main.b7c15d3f.css",
+    "main.js": "./static/js/main.c8b7c8a6.js",
     "static/media/handsome_boy.png": "./static/media/handsome_boy.57fa3e9675d244478548.png",
-    "static/media/avatar_shapes.svg": "./static/media/avatar_shapes.4ae49ed171fd0fab05b6.svg",
-    "static/media/design_decoration.svg": "./static/media/design_decoration.6e1e7385f22420dd4ec2.svg",
-    "static/media/web_dev_decoration.svg": "./static/media/web_dev_decoration.f9b8ed090b7d06fa8034.svg",
-    "static/media/mobile_decoration.svg": "./static/media/mobile_decoration.53ac1645e5b135f97066.svg",
+    "static/media/avatar_shapes.svg": "./static/media/avatar_shapes.727223be19acc51bceb8.svg",
+    "static/media/design_decoration.svg": "./static/media/design_decoration.21f94c5b6bc20c488f71.svg",
+    "static/media/web_dev_decoration.svg": "./static/media/web_dev_decoration.e1bea417678af4f6208b.svg",
+    "static/media/mobile_decoration.svg": "./static/media/mobile_decoration.0ce2aa15c446ab3e96df.svg",
     "index.html": "./index.html",
-    "main.128457a3.css.map": "./static/css/main.128457a3.css.map",
-    "main.68366d5c.js.map": "./static/js/main.68366d5c.js.map"
+    "main.b7c15d3f.css.map": "./static/css/main.b7c15d3f.css.map",
+    "main.c8b7c8a6.js.map": "./static/js/main.c8b7c8a6.js.map"
   },
   "entrypoints": [
-    "static/css/main.128457a3.css",
-    "static/js/main.68366d5c.js"
+    "static/css/main.b7c15d3f.css",
+    "static/js/main.c8b7c8a6.js"
   ]
 }

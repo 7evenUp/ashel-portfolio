@@ -14,6 +14,24 @@ export interface IProject {
 
 export const projects: Array<IProject> = [
   {
+    img: 'project_images/project-trading-plan.png',
+    heading: 'Trading Plan',
+    subheading: 'App for building trading strategy',
+    date: 'February 2023',
+    stack: ['React', 'Vite', 'TailwindCSS', 'Vitest', 'Redux/toolkit'],
+    links: [
+      {
+        label: 'Deploy',
+        href: 'https://trading-plan.vercel.app/'
+      },
+      {
+        label: 'Source',
+        href: 'https://github.com/7evenUp/trading-plan'
+      }
+    ],
+    description: 'I do trading and I am so exhausted of using products with free plan. So I decided to build an app for building trading strategies, backtesting, keeping records on my trades. It is in MVP mode right now'
+  },
+  {
     img: 'project_images/project-ashel-blog.png',
     heading: 'Ashel website',
     subheading: 'My own blog and gallery website',
@@ -44,8 +62,5 @@ export const projects: Array<IProject> = [
       }
     ],
     description: 'Every self taught developer needs a portfolio, and I am no exception. It is simply beautiful website representing my skills and projects.'
-  },
-  // {
-
-  // }
+  }
 ]
