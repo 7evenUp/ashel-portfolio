@@ -18,7 +18,7 @@ export const projects: Array<IProject> = [
     heading: 'Trading Plan',
     subheading: 'App for building trading strategy',
     date: 'February 2023',
-    stack: ['React', 'Vite', 'TailwindCSS', 'Vitest', 'Redux/toolkit'],
+    stack: ['React', 'Vite', 'TailwindCSS', 'Redux/toolkit', 'Recharts'],
     links: [
       {
         label: 'Deploy',
@@ -29,14 +29,14 @@ export const projects: Array<IProject> = [
         href: 'https://github.com/7evenUp/trading-plan'
       }
     ],
-    description: 'I do trading and I am so exhausted of using products with free plan. So I decided to build an app for building trading strategies, backtesting, keeping records on my trades. It is in MVP mode right now'
+    description: 'I do trading and I am so exhausted of using products with a free plan. So I decided to build an app for building trading strategies, backtesting, keeping records on my trades. It is in MVP mode right now'
   },
   {
     img: 'project_images/project-ashel-blog.png',
     heading: 'Ashel website',
     subheading: 'My own blog and gallery website',
     date: 'December 2022',
-    stack: ['Next.js', 'Supabase', 'MDX', 'Tailwindcss', 'Prisma', 'tRPC'],
+    stack: ['Next.js', 'Supabase', 'MDX', 'TailwindCSS', 'Prisma', 'tRPC'],
     links: [
       {
         label: 'Deploy',
