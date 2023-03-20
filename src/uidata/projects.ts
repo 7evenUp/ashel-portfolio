@@ -14,6 +14,24 @@ export interface IProject {
 
 export const projects: Array<IProject> = [
   {
+    img: 'project_images/project-text-similarity.png',
+    heading: 'Text Similarity API',
+    subheading: 'Website for creating API keys which enable usage of similarity API',
+    date: 'March 2023',
+    stack: ['Next 13', 'MUI', 'Upstash', 'Next-Auth', 'Prisma', 'TailwindCSS'],
+    links: [
+      {
+        label: 'Deploy',
+        href: 'https://text-similarity.vercel.app/'
+      },
+      {
+        label: 'Source',
+        href: 'https://github.com/7evenUp/text-similarity'
+      },
+    ],
+    description: 'Fullstack app built with Next 13, UI components built with @radix-ui, auth implemented using Next-Auth, chosen database is mysql from Planetscale, db management through prisma. Real world app which uses OpenAI API. You can read properly how to use app in README on github source page'
+  },
+  {
     img: 'project_images/project-trading-plan.png',
     heading: 'Trading Plan',
     subheading: 'App for building trading strategy',
