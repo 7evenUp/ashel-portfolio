@@ -1,6 +1,6 @@
-import { motion } from 'framer-motion'
-import { IProject } from '../../uidata/projects'
-import styles from './Project.module.scss'
+import { motion } from "framer-motion"
+import { IProject } from "@/uidata/projects"
+import styles from "./Project.module.scss"
 
 const Project = ({
   img,
@@ -9,7 +9,7 @@ const Project = ({
   date,
   stack,
   links,
-  description
+  description,
 }: IProject) => {
   return (
     <div className={styles.container}>
@@ -20,11 +20,11 @@ const Project = ({
         transition={{ duration: 1 }}
         className={styles.image_wrapper}
       >
-        <img className={styles.image} src={img} alt={heading}/>
+        <img className={styles.image} src={img} alt={heading} />
       </motion.div>
-      
+
       <div className={styles.info}>
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
@@ -48,7 +48,9 @@ const Project = ({
             <div>
               <h3 className={styles.info_heading}>Technologies</h3>
               <div className={styles.info_stack}>
-                {stack.map((el, i) => <span key={i}>{el}</span>)}
+                {stack.map((el, i) => (
+                  <span key={i}>{el}</span>
+                ))}
               </div>
             </div>
             <div>
@@ -58,9 +60,11 @@ const Project = ({
                   <a
                     key={i}
                     href={link.href}
-                    target={'_blank'}
+                    target={"_blank"}
                     rel="noreferrer"
-                  >{link.label}</a>
+                  >
+                    {link.label}
+                  </a>
                 ))}
               </div>
             </div>

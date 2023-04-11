@@ -1,9 +1,9 @@
 export type Skill = {
   name: string
-  level: 'skilled' | 'beginner'
+  level: "skilled" | "beginner"
 }
 
-type SkillsHeading = 'frontend' | 'backend' | 'mobile'
+type SkillsHeading = "frontend" | "backend" | "mobile"
 
 export type Field = {
   title: SkillsHeading
@@ -13,82 +13,82 @@ export type Field = {
 
 export const fieldData: Field[] = [
   {
-    title: 'frontend',
-    img: 'images/frontend_illustration.png',
+    title: "frontend",
+    img: "images/frontend_illustration.png",
     skills: [
       {
-        name: 'React',
-        level: 'skilled'
+        name: "React",
+        level: "skilled",
       },
       {
-        name: 'Next.js',
-        level: 'skilled'
+        name: "Next.js",
+        level: "skilled",
       },
       {
-        name: 'Redux toolkit',
-        level: 'skilled'
+        name: "Redux toolkit",
+        level: "skilled",
       },
       {
-        name: 'Tailwind CSS',
-        level: 'skilled'
+        name: "Tailwind CSS",
+        level: "skilled",
       },
       {
-        name: 'React Query',
-        level: 'beginner'
+        name: "React Query",
+        level: "beginner",
       },
       {
-        name: 'tRPC',
-        level: 'beginner'
-      }
-    ]
+        name: "tRPC",
+        level: "beginner",
+      },
+    ],
   },
   {
-    title: 'backend',
-    img: 'images/backend_illustration.png',
+    title: "backend",
+    img: "images/backend_illustration.png",
     skills: [
       {
-        name: 'node',
-        level: 'skilled'
+        name: "node",
+        level: "skilled",
       },
       {
-        name: 'express',
-        level: 'skilled'
+        name: "express",
+        level: "skilled",
       },
       {
-        name: 'nest',
-        level: 'beginner'
+        name: "nest",
+        level: "beginner",
       },
       {
-        name: 'MongoDB',
-        level: 'beginner'
+        name: "MongoDB",
+        level: "beginner",
       },
-      
+
       {
-        name: 'firebase',
-        level: 'skilled'
+        name: "firebase",
+        level: "skilled",
       },
       {
-        name: 'supabase',
-        level: 'skilled'
-      }
-    ]
+        name: "supabase",
+        level: "skilled",
+      },
+    ],
   },
   {
-    title: 'mobile',
-    img: 'images/mobile_illustration.png',
+    title: "mobile",
+    img: "images/mobile_illustration.png",
     skills: [
       {
-        name: 'React-Native',
-        level: 'skilled'
+        name: "React-Native",
+        level: "skilled",
       },
       {
-        name: 'flutter',
-        level: 'beginner'
+        name: "flutter",
+        level: "beginner",
       },
       {
-        name: 'Kotlin',
-        level: 'beginner'
+        name: "Kotlin",
+        level: "beginner",
       },
-    ]
+    ],
   },
 ]
