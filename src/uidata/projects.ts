@@ -13,6 +13,26 @@ export interface IProject {
 
 export const projects: Array<IProject> = [
   {
+    img: "project_images/project-ashel-ui-kit.png",
+    heading: "Ashel UI Kit",
+    subheading:
+      "Website with documentation and implementation of Material Design V3 for web",
+    date: "April 2023",
+    stack: ["Next 13", "Material V3", "Next-themes", "TailwindCSS", "Radix-ui", "CVA"],
+    links: [
+      {
+        label: "Deploy",
+        href: "https://ashel-ui-kit.vercel.app/",
+      },
+      {
+        label: "Source",
+        href: "https://github.com/7evenUp/ashel-ui-kit",
+      },
+    ],
+    description:
+      "Website-documentation built with Next 13, UI components implemented mostly using @radix-ui according to Material Design V3 documentation. On that site you are able to see guides how to get started developing your future app with M3 design.",
+  },
+  {
     img: "project_images/project-text-similarity.png",
     heading: "Text Similarity API",
     subheading:
