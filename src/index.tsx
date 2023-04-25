@@ -1,5 +1,9 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
+import { inject } from "@vercel/analytics"
+
+inject()
+
 import AppNavigator from "./AppNavigator"
 import "./index.scss"
 
