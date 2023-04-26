@@ -16,9 +16,9 @@ export const projects: Array<IProject> = [
     img: "project_images/project-ashel-ui-kit.png",
     heading: "Ashel UI Kit",
     subheading:
-      "Website with documentation and implementation of Material Design V3 for web",
+      "Website with documentation and implementation of Material Design V3 for web as React components",
     date: "April 2023",
-    stack: ["Next 13", "Material V3", "Next-themes", "TailwindCSS", "Radix-ui", "CVA"],
+    stack: ["Next 13", "Material V3", "Radix-ui", "TailwindCSS", "cva", "Next-themes"],
     links: [
       {
         label: "Deploy",

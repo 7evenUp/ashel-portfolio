@@ -47,29 +47,32 @@ export const fieldData: Field[] = [
     img: "images/backend_illustration.png",
     skills: [
       {
-        name: "node",
+        name: "Node.js",
         level: "skilled",
       },
       {
-        name: "express",
+        name: "Express",
         level: "skilled",
       },
       {
-        name: "nest",
-        level: "beginner",
+        name: "Firebase",
+        level: "skilled",
+      },
+      {
+        name: "Supabase",
+        level: "skilled",
       },
       {
         name: "MongoDB",
         level: "beginner",
       },
-
       {
-        name: "firebase",
-        level: "skilled",
+        name: "Fastapi",
+        level: "beginner",
       },
       {
-        name: "supabase",
-        level: "skilled",
+        name: "Postgresql",
+        level: "beginner",
       },
     ],
   },
@@ -78,11 +81,11 @@ export const fieldData: Field[] = [
     img: "images/mobile_illustration.png",
     skills: [
       {
-        name: "React-Native",
+        name: "React Native",
         level: "skilled",
       },
       {
-        name: "flutter",
+        name: "Flutter",
         level: "beginner",
       },
       {
