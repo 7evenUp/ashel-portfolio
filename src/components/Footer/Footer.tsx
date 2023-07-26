@@ -83,7 +83,7 @@ const Footer = () => {
       </div>
       <span className={styles.separator} />
       <div className={styles.footer_bottom}>
-        <span className={styles.copyright}>© Artyom Sheludeshev 2022</span>
+        <span className={styles.copyright}>© Artyom Sheludeshev 2022-2023</span>
         <Socials />
       </div>
     </motion.footer>

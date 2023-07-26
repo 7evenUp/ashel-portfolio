@@ -13,24 +13,43 @@ export interface IProject {
 
 export const projects: Array<IProject> = [
   {
-    img: "project_images/project-ashel-ui-kit.png",
-    heading: "Ashel UI Kit",
-    subheading:
-      "Website with documentation and implementation of Material Design V3 for web as React components",
-    date: "April 2023",
-    stack: ["Next 13", "Material V3", "Radix-ui", "TailwindCSS", "cva", "Next-themes"],
+    img: "project_images/project-m3-dashboard.png",
+    heading: "Dashboard template",
+    subheading: "It is a simple dashboard template with M3 design system",
+    date: "July 2023",
+    stack: ["Ashel M3 Kit", "Material Design V3"],
     links: [
       {
         label: "Deploy",
-        href: "https://ashel-ui-kit.vercel.app/",
+        href: "https://dashboard-m3.vercel.app/",
       },
       {
         label: "Source",
-        href: "https://github.com/7evenUp/ashel-ui-kit",
+        href: "https://github.com/7evenUp/dashboard-m3",
       },
     ],
     description:
-      "Website-documentation built with Next 13, UI components implemented mostly using @radix-ui according to Material Design V3 documentation. On that site you are able to see guides how to get started developing your future app with M3 design.",
+      "Website just showing how quickly you can create great UIs with both light and dark modes",
+  },
+  {
+    img: "project_images/project-ashel-m3-kit.png",
+    heading: "Ashel M3 Kit",
+    subheading:
+      "My own implementation of Material Design V3 components for React",
+    date: "April 2023",
+    stack: ["NextJS 13", "Radix-ui", "TailwindCSS", "cva"],
+    links: [
+      {
+        label: "Deploy",
+        href: "https://ashel-m3-kit.vercel.app/",
+      },
+      {
+        label: "Source",
+        href: "https://github.com/7evenUp/ashel-m3-kit",
+      },
+    ],
+    description:
+      "Website-documentation built with NextJS 13, UI components implemented mostly using @radix-ui according to Material Design V3 specs. Here you will find guides how to get started developing your future app with M3 components and style guides.",
   },
   {
     img: "project_images/project-text-similarity.png",
