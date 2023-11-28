@@ -18,12 +18,12 @@ const App = () => {
             key="preloader"
             initial={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 3 }}
+            transition={{ duration: 2, ease: 'backInOut' }}
           >
             <h1>... Loading Ashel's data ...</h1>
           </motion.div>
         ) : (
-          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} key="main">
             <h1 className="App_heading">Ashel Portfolio</h1>
 
             <Outlet />
