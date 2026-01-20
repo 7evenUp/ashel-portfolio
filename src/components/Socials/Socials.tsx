@@ -2,20 +2,12 @@ import styles from "./Socials.module.scss"
 
 const socialsData = [
   {
-    link: "https://vk.com/aptem_oxa",
-    src: "icons/vk_icon.svg",
+    link: "https://t.me/shel_heliks",
+    src: "icons/telegram.svg",
   },
   {
     link: "https://github.com/7evenUp",
     src: "icons/github_icon.svg",
-  },
-  {
-    link: "https://www.instagram.com/7_even_up/",
-    src: "icons/instagram_icon.svg",
-  },
-  {
-    link: "https://dribbble.com/7_even_Up",
-    src: "icons/dribbble_icon.svg",
   },
 ]
 
@@ -29,7 +21,12 @@ export default function Socials({ small }: SocialsProps) {
       {socialsData.map((social, i) => (
         <li key={i}>
           <a href={social.link} target={"_blank"} rel="noreferrer">
-            <span style={{ backgroundImage: `url(${social.src})` }} />
+            <span
+              style={{
+                backgroundImage: `url(${social.src})`,
+                backgroundRepeat: "no-repeat",
+              }}
+            />
           </a>
         </li>
       ))}

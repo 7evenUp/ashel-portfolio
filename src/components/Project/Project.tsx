@@ -53,21 +53,23 @@ const Project = ({
                 ))}
               </div>
             </div>
-            <div>
-              <h3 className={styles.info_heading}>Links</h3>
-              <div className={styles.info_links}>
-                {links.map((link, i) => (
-                  <a
-                    key={i}
-                    href={link.href}
-                    target={"_blank"}
-                    rel="noreferrer"
-                  >
-                    {link.label}
-                  </a>
-                ))}
+            {links.length > 0 && (
+              <div>
+                <h3 className={styles.info_heading}>Links</h3>
+                <div className={styles.info_links}>
+                  {links.map((link, i) => (
+                    <a
+                      key={i}
+                      href={link.href}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      {link.label}
+                    </a>
+                  ))}
+                </div>
               </div>
-            </div>
+            )}
           </div>
           <div className={styles.info_bottom_right}>
             <h3 className={styles.info_heading}>Description</h3>

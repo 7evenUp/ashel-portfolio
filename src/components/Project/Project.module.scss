@@ -1,5 +1,5 @@
-@use '../../styles/colors';
-@use '../../styles/mixins';
+@use "../../styles/colors";
+@use "../../styles/mixins";
 
 .container {
   width: 100%;
@@ -13,6 +13,7 @@
 
 .image_wrapper {
   flex-basis: 40%;
+  overflow: hidden;
 
   @include mixins.tablet {
     display: flex;
@@ -26,10 +27,15 @@
     object-fit: cover;
     min-height: 200px;
     box-shadow: 0 0 10px 0 colors.$beige;
+    transition: all 0.15s ease-in-out;
 
     @include mixins.tablet {
       max-width: 90%;
       height: auto;
+    }
+
+    &:hover {
+      transform: scale(1.05);
     }
   }
 }
@@ -39,7 +45,7 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-  
+
   &_top {
     display: flex;
     flex-direction: column;
@@ -80,6 +86,7 @@
       display: flex;
       flex-direction: column;
       gap: 24px;
+      justify-content: space-between;
     }
 
     &_right {
@@ -107,7 +114,7 @@
   &_stack {
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 12px;
 
     @include mixins.big-tablet {
       gap: 8px;
@@ -159,7 +166,7 @@
       font-size: 3.5rem;
     }
   }
-  
+
   span {
     font-size: 2.4rem;
     color: colors.$gray;

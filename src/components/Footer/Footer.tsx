@@ -39,25 +39,6 @@ const Footer = () => {
             </div>
           </div>
           <span className={styles.separator} />
-          <div className={styles.contacts}>
-            <h4 className={styles.contacts_heading}>Contact me</h4>
-            <div className={styles.contacts_links}>
-              <a
-                className={styles.link}
-                href="mailto:sheludeshev.artyom@mail.ru"
-              >
-                @mail.me
-              </a>
-              <a
-                className={styles.link}
-                href="https://t.me/x7evenUpx"
-                target={"_blank"}
-                rel="noreferrer"
-              >
-                t.me/x7evenUpx
-              </a>
-            </div>
-          </div>
         </div>
         <span className={styles.separator} />
         <div className={styles.footer_top_right}>
@@ -83,7 +64,9 @@ const Footer = () => {
       </div>
       <span className={styles.separator} />
       <div className={styles.footer_bottom}>
-        <span className={styles.copyright}>© Artyom Sheludeshev 2022-2023</span>
+        <span className={styles.copyright}>
+          © Artyom Sheludeshev 2022-{new Date().getFullYear()}
+        </span>
         <Socials />
       </div>
     </motion.footer>
